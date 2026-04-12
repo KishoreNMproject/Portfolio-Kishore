@@ -54,9 +54,7 @@
     <h1>Kishore S</h1>
     <p>Python Developer | AI/ML | Full Stack Innovator</p>
 
-    <a href="mailto:sproutingkishore2005@gmail.com">
-      <button class="btn btn-primary">Contact Me</button>
-    </a>
+    <button class="btn btn-primary" onclick="openContact()">Contact Me</button>
 
     <button class="btn btn-outline" onclick="openResume()">View Resume</button>
   </section>
@@ -129,7 +127,27 @@ function openResume(){
 function closeResume(){
   document.getElementById('resumeModal').style.display='none';
 }
+// Contact modal
+function openContact(){
+  document.getElementById('contactModal').style.display='block';
+}
+function closeContact(){
+  document.getElementById('contactModal').style.display='none';
+}
 </script>
+
+<!-- CONTACT MODAL -->
+<div id="contactModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:999;">
+  <div style="width:90%; max-width:400px; margin:10% auto; background:#111; padding:20px; border-radius:12px; text-align:center; position:relative;">
+    <button onclick="closeContact()" style="position:absolute; top:10px; right:10px; background:red; color:white; border:none; padding:6px 10px; border-radius:6px; cursor:pointer;">X</button>
+    <h2>Contact Me</h2>
+    <p style="margin-top:10px;">📧 sproutingkishore2005@gmail.com</p>
+    <p>📞 9445520766</p>
+    <a href="mailto:sproutingkishore2005@gmail.com">
+      <button class="btn btn-outline" style="margin-top:10px;">Send Email</button>
+    </a>
+  </div>
+</div>
 
 </body>
 </html>
