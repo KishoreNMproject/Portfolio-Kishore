@@ -17,6 +17,8 @@
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:15px; }
     h2 { text-align:center; margin-top:40px; }
     .contact { text-align:center; margin-top:40px; color:#aaa; }
+    .contact a, .social-link { color:cyan; text-decoration:none; }
+    .contact a:hover, .social-link:hover { text-decoration:underline; }
 
     /* MODAL */
     #resumeModal {
@@ -108,6 +110,7 @@
   <div class="contact">
     <h2>Contact</h2>
     <p>sproutingkishore2005@gmail.com | 9445520766</p>
+    <p><a href="https://github.com/KishoreNMproject" target="_blank" rel="noopener noreferrer">GitHub: github.com/KishoreNMproject</a></p>
   </div>
 
 </div>
@@ -143,6 +146,7 @@ function closeContact(){
     <h2>Contact Me</h2>
     <p style="margin-top:10px;">📧 sproutingkishore2005@gmail.com</p>
     <p>📞 9445520766</p>
+    <p><a class="social-link" href="https://github.com/KishoreNMproject" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
     <a href="mailto:sproutingkishore2005@gmail.com">
       <button class="btn btn-outline" style="margin-top:10px;">Send Email</button>
     </a>
