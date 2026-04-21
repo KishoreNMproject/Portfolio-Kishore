@@ -10,6 +10,17 @@
     .hero { text-align:center; padding:80px 20px; }
     .hero h1 { font-size:3rem; background:linear-gradient(90deg,cyan,violet); -webkit-background-clip:text; color:transparent; }
     .hero p { color:#ccc; }
+    .hero-link {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      margin:8px 0 4px;
+      color:cyan;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .hero-link:hover { text-decoration:underline; }
+    .hero-link svg { width:18px; height:18px; fill:currentColor; }
     .btn { padding:10px 20px; margin:10px; border-radius:8px; border:none; cursor:pointer; }
     .btn-primary { background:cyan; color:black; }
     .btn-outline { border:1px solid cyan; color:cyan; background:transparent; }
@@ -17,8 +28,6 @@
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:15px; }
     h2 { text-align:center; margin-top:40px; }
     .contact { text-align:center; margin-top:40px; color:#aaa; }
-    .contact a, .social-link { color:cyan; text-decoration:none; }
-    .contact a:hover, .social-link:hover { text-decoration:underline; }
 
     /* MODAL */
     #resumeModal {
@@ -54,6 +63,12 @@
   <!-- HERO -->
   <section class="hero">
     <h1>Kishore S</h1>
+    <a class="hero-link" href="https://github.com/KishoreNMproject" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+      <svg viewBox="0 0 16 16" aria-hidden="true">
+        <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
+      </svg>
+      <span>GitHub</span>
+    </a>
     <p>Python Developer | AI/ML | Full Stack Innovator</p>
 
     <button class="btn btn-primary" onclick="openContact()">Contact Me</button>
@@ -110,7 +125,6 @@
   <div class="contact">
     <h2>Contact</h2>
     <p>sproutingkishore2005@gmail.com | 9445520766</p>
-    <p><a href="https://github.com/KishoreNMproject" target="_blank" rel="noopener noreferrer">GitHub: github.com/KishoreNMproject</a></p>
   </div>
 
 </div>
@@ -146,7 +160,6 @@ function closeContact(){
     <h2>Contact Me</h2>
     <p style="margin-top:10px;">📧 sproutingkishore2005@gmail.com</p>
     <p>📞 9445520766</p>
-    <p><a class="social-link" href="https://github.com/KishoreNMproject" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
     <a href="mailto:sproutingkishore2005@gmail.com">
       <button class="btn btn-outline" style="margin-top:10px;">Send Email</button>
     </a>
